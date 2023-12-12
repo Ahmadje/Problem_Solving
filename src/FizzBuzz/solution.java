@@ -12,19 +12,22 @@ public class solution {
 
         for (int i = 1; i <= n; i++) {
 
-            if (i % 3 == 0 & i % 5 == 0) {
-                // Divides by both 3 and 5, add FizzBuzz
-                ans.add("FizzBuzz");
-            } else if (i % 3 == 0) {
-                // Divides by 3, add Fizz
-                ans.add("Fizz");
-            } else if (i % 5 == 0) {
-                // Divides by 5, add Buzz
-                ans.add("Buzz");
-            } else {
-                // Not divisible by 3 or 5, add the number
-                ans.add(Integer.toString(i));
-            }
+            String result = (i % 3 == 0 & i % 5 == 0) ? "FizzBuzz" : (i % 3 == 0) ? "Fizz" : (i % 5 == 0) ? "Buzz" : Integer.toString(i);
+            ans.add(result);
+
+//            if (i % 3 == 0 & i % 5 == 0) {
+//                // Divides by both 3 and 5, add FizzBuzz
+//                ans.add("FizzBuzz");
+//            } else if (i % 3 == 0) {
+//                // Divides by 3, add Fizz
+//                ans.add("Fizz");
+//            } else if (i % 5 == 0) {
+//                // Divides by 5, add Buzz
+//                ans.add("Buzz");
+//            } else {
+//                // Not divisible by 3 or 5, add the number
+//                ans.add(Integer.toString(i));
+//            }
         }
 
         return ans;

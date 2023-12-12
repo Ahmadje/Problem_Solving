@@ -8,7 +8,7 @@ public class runner {
         Scanner in = new Scanner(System.in);
         System.out.println("Please Enter Size of List: ");
         int size = in.nextInt();
-        ArrayList<Integer> arr = new ArrayList<>(size);
+        List<Integer> arr = new ArrayList<>(size);
         for (int i = 0; i < size;) {
             System.out.println("Enter #" + (i + 1) + ": ");
             int num = in.nextInt();
