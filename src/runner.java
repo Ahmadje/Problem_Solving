@@ -6,7 +6,7 @@ import java.util.*;
 public class runner {
 
     public static void main(String[] args) {
-        System.out.println(new solution().checkStatus(5));
+        System.out.println(new solution().isPowerOfFour(10));
     }
 }
 

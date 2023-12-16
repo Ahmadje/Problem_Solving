@@ -12,8 +12,12 @@ public class solution {
 
         for (int i = 1; i <= n; i++) {
 
-            String result = (i % 3 == 0 & i % 5 == 0) ? "FizzBuzz" : (i % 3 == 0) ? "Fizz" : (i % 5 == 0) ? "Buzz" : Integer.toString(i);
-            ans.add(result);
+            ans.add(
+                    i % 15 == 0 ? "FizzBuzz" :
+                            i % 5 == 0 ? "Buzz" :
+                                    i % 3 == 0 ? "Fizz" :
+                                            String.valueOf(i)
+            );
 
 //            if (i % 3 == 0 & i % 5 == 0) {
 //                // Divides by both 3 and 5, add FizzBuzz
