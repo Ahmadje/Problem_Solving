@@ -1,4 +1,4 @@
-package ThreeLetteresBetween_a_b;
+package LeetCode.ThreeLetteresBetween_a_b;
 
 import java.util.Scanner;
 

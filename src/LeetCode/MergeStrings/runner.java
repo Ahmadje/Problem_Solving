@@ -1,6 +1,4 @@
-import java.text.DecimalFormat;
-import java.util.*;
-import java.util.stream.Collectors;
+package LeetCode.MergeStrings;
 
 ////////Input text and output Array of string sorted Desc ////////////
 

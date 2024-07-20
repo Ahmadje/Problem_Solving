@@ -1,9 +1,5 @@
-package ValeoQ;
+package commonBetween2Arrays;
 ////////////// Get Sum of Grades and break when user enter -1 ///////////////
-
-import SumOfUnknowParameters.solution;
-
-import java.util.Scanner;
 
 public class runner {
     public static void main(String[] args) {

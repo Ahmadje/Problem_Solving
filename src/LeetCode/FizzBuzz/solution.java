@@ -1,5 +1,5 @@
-package FizzBuzz;
-////////////Print Array (Divides by both 3 and 5 =>> FizzBuzz), (Divides by 3 =>> Fizz), (Not divisible by 3 or 5 =>> add the number)///////////////
+package LeetCode.FizzBuzz;
+////////////Print Array (Divides by both 3 and 5 =>> LeetCode.FizzBuzz), (Divides by 3 =>> Fizz), (Not divisible by 3 or 5 =>> add the number)///////////////
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +20,8 @@ public class solution {
             );
 
 //            if (i % 3 == 0 & i % 5 == 0) {
-//                // Divides by both 3 and 5, add FizzBuzz
-//                ans.add("FizzBuzz");
+//                // Divides by both 3 and 5, add LeetCode.FizzBuzz
+//                ans.add("LeetCode.FizzBuzz");
 //            } else if (i % 3 == 0) {
 //                // Divides by 3, add Fizz
 //                ans.add("Fizz");
