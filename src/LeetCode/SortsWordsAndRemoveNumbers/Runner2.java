@@ -8,12 +8,12 @@ import java.util.List;
 public class Runner2 {
     public static String assertArray(String sentence) {
         String[] words = sentence.split(" ");
-        List<String> wordsList = new ArrayList<>(List.of(words));
+        List<String> result = new ArrayList<>(List.of(words));
         for (String word : words) {
-            int index = Character.getNumericValue(word.charAt(word.length() - 1));
-            wordsList.set(index - 1, word.substring(0, word.length() - 1));
+            String index = word.substring(word.length()-1);
+            result.set(Integer.parseInt(index)-1,word.substring(0,word.length()-1));
         }
-        return String.join(" ", wordsList);
+        return String.join(" ",result);
     }
 
     public static void main(String[] args) {

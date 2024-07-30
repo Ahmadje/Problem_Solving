@@ -16,6 +16,21 @@ public class Runner {
         return count;
     }
 
+
+/*
+    char[] jewelsArr = jewels.toCharArray();
+    char[] stonesArr = stones.toCharArray();
+    int amount = 0;
+        for (char j : jewelsArr) {
+        for (char s : stonesArr) {
+            if (s == j) {
+                amount++;
+            }
+        }
+    }
+        return amount;
+*/
+
     public static void main(String[] args) {
         System.out.println(fixSentence("aAAbbbb","aA"));
     }

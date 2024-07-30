@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -6,24 +5,20 @@ import java.util.stream.Collectors;
 
 public class runner {
 
-    public static String longestCommonPrefix(String word1, String word2) {
-        int min = Math.min(word1.length(), word2.length());
-        StringBuilder result = new StringBuilder();
-            for (int i = 0; i < min ; i++) {
-                result.append(word1.charAt(i));
-                result.append(word2.charAt(i));
+    public static String longestCommonPrefix(String[] input) {
+        List<String> wordsArr = new ArrayList<>(Arrays.asList(input));
+        String sub = wordsArr.get(0);
+        for (String w : wordsArr)
+            while (w.indexOf(sub) != 0) {
+                sub = sub.substring(0, sub.length() - 1);
             }
-                if (word1.length() > word2.length())
-                    result.append(word1.substring(min));
-                if (word2.length() > word1.length())
-                    result.append(word2.substring(min));
-
-        return result.toString();
+        return sub;
     }
 
+
+
+
     public static void main(String[] args) {
-        System.out.println(longestCommonPrefix("abc","pqr"));
-        System.out.println(longestCommonPrefix("abc","pqrWS"));
-        System.out.println(longestCommonPrefix("abcQASR","pqrWS"));
+        System.out.println(longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
     }
 }
