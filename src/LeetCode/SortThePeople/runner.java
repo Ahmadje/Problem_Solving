@@ -2,7 +2,7 @@ package LeetCode.SortThePeople;
 
 import java.util.TreeMap;
 
-////////Input text and output Array of string sorted Desc ////////////
+//////// Input text and output Array of string sorted Desc ////////////
 
 public class runner {
 
